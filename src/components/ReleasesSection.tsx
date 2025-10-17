@@ -1,22 +1,31 @@
-import { Music2, Clock, TrendingUp } from 'lucide-react';
-import { Button } from '@/components/ui/button';
+import { Music2, Clock } from 'lucide-react';
+import { Button } from '@/components/ui/button'; // ודא שהנתיב הזה תקף בפרויקט שלך
+
+type Release = {
+  title: string;
+  artist: string;
+  status: string;
+  date: string;
+  type: string;
+  icon: React.ElementType;
+};
 
 export const ReleasesSection = () => {
-  const releases = [
+  const releases: Release[] = [
     {
-      title: 'לא נמאס',
-      artist: 'liskasYR',
-      status: 'Latest Release',
-      date: '2025',
-      type: 'Single',
-      icon: TrendingUp,
-    },
-    {
-      title: 'Upcoming Album',
+      title: 'ירח',
       artist: 'liskasYR',
       status: 'Coming Soon',
-      date: 'TBA',
-      type: 'Full Album',
+      date: '2025',
+      type: 'Single',
+      icon: Clock,
+    },
+    {
+      title: 'חשוך',
+      artist: 'liskasYR',
+      status: 'Coming Soon',
+      date: '2025',
+      type: 'Single',
       icon: Clock,
     },
   ];
@@ -24,7 +33,7 @@ export const ReleasesSection = () => {
   return (
     <section id="releases" className="py-24 px-4 relative z-10">
       <div className="max-w-7xl mx-auto">
-        {/* Section header */}
+        {/* כותרת הסקשן */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-6xl font-orbitron font-bold text-silver-light mb-4">
             Game Releases
@@ -35,7 +44,7 @@ export const ReleasesSection = () => {
           </p>
         </div>
 
-        {/* Releases grid */}
+        {/* גריד של ריליסים */}
         <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
           {releases.map((release, index) => {
             const Icon = release.icon;
@@ -44,7 +53,7 @@ export const ReleasesSection = () => {
                 key={index}
                 className="glass-card glow-border-hover rounded-3xl p-8 group transition-all duration-300"
               >
-                {/* Status badge */}
+                {/* סטטוס */}
                 <div className="flex items-center gap-2 mb-6">
                   <Icon className="w-5 h-5 text-silver animate-pulse-glow" />
                   <span className="text-sm font-orbitron text-silver uppercase tracking-wider">
@@ -52,12 +61,12 @@ export const ReleasesSection = () => {
                   </span>
                 </div>
 
-                {/* Album art placeholder */}
+                {/* placeholder לתמונה */}
                 <div className="mb-6 aspect-square rounded-2xl bg-gradient-to-br from-muted/20 to-muted/40 border border-border flex items-center justify-center group-hover:border-muted transition-all duration-300">
                   <Music2 className="w-24 h-24 text-muted-foreground/40 group-hover:text-muted-foreground/60 transition-colors duration-300" />
                 </div>
 
-                {/* Release info */}
+                {/* מידע על הריליס */}
                 <div className="space-y-3">
                   <h3 className="text-3xl font-orbitron font-bold text-silver-light">
                     {release.title}
@@ -72,7 +81,7 @@ export const ReleasesSection = () => {
                   </div>
                 </div>
 
-                {/* Action button */}
+                {/* כפתור פעולה אם זה ריליס חדש */}
                 {release.status === 'Latest Release' && (
                   <div className="mt-6">
                     <Button
