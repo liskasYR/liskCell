@@ -1,9 +1,11 @@
+import { Navigation } from '@/components/Navigation';
 import { ParticleBackground } from '@/components/ParticleBackground';
 import { HeroSection } from '@/components/HeroSection';
 import { AboutSection } from '@/components/AboutSection';
 import { ProjectsSection } from '@/components/ProjectsSection';
 import { ReleasesSection } from '@/components/ReleasesSection';
 import { ContactSection } from '@/components/ContactSection';
+import { SupportSection } from '@/components/SupportSection';
 import { Footer } from '@/components/Footer';
 
 const Index = () => {
@@ -12,6 +14,9 @@ const Index = () => {
       {/* Animated particle background */}
       <ParticleBackground />
       
+      {/* Navigation */}
+      <Navigation />
+      
       {/* Main content */}
       <div className="relative z-10">
         <HeroSection />
@@ -19,6 +24,7 @@ const Index = () => {
         <ProjectsSection />
         <ReleasesSection />
         <ContactSection />
+        <SupportSection />
         <Footer />
       </div>
     </div>

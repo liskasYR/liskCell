@@ -1,5 +1,6 @@
 import { ChevronDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import likLogo from '@/assets/lik-logo.png';
 
 export const HeroSection = () => {
   const scrollToAbout = () => {
@@ -7,14 +8,16 @@ export const HeroSection = () => {
   };
 
   return (
-    <section className="min-h-screen flex flex-col items-center justify-center relative px-4">
+    <section id="hero" className="min-h-screen flex flex-col items-center justify-center relative px-4 pt-20">
       <div className="text-center z-10 space-y-8">
         {/* Logo with glow effect */}
         <div className="mb-12 animate-float">
           <div className="inline-block glow-border rounded-2xl p-8 glass-card animate-glow">
-            <h1 className="text-7xl md:text-9xl font-orbitron font-black text-gradient">
-              lik
-            </h1>
+            <img
+              src={likLogo}
+              alt="LIK Logo"
+              className="w-32 h-32 md:w-48 md:h-48 object-contain"
+            />
           </div>
         </div>
 
@@ -25,13 +28,13 @@ export const HeroSection = () => {
 
         {/* Tagline */}
         <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto font-exo">
-          Creative AI-Powered Music & Technology
+          חברת פיתוח משחקים פופולרית
         </p>
 
         {/* Subtitle */}
         <p className="text-base md:text-lg text-muted-foreground max-w-xl mx-auto font-exo">
           Founded by <span className="text-gradient-blue font-semibold">liskasYR</span> • 
-          Innovating the future of music and AI
+          יוצרים חוויות משחק שמרגשות מיליוני שחקנים
         </p>
 
         {/* CTA Button */}
@@ -41,7 +44,7 @@ export const HeroSection = () => {
             size="lg"
             className="glow-border-hover bg-transparent backdrop-blur-sm text-primary hover:bg-primary hover:text-primary-foreground font-orbitron text-lg px-8 py-6 transition-all duration-300"
           >
-            Explore Our World
+            גלה עוד
           </Button>
         </div>
       </div>

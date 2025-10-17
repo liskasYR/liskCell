@@ -36,12 +36,12 @@ export const AboutSection = () => {
         {/* Mission statement */}
         <div className="glass-card glow-border rounded-3xl p-8 md:p-12 mb-16 max-w-4xl mx-auto">
           <p className="text-lg md:text-xl text-foreground leading-relaxed font-exo">
-            LiskCell is revolutionizing the creative landscape by seamlessly blending 
-            <span className="text-gradient-blue font-semibold"> artificial intelligence </span> 
-            with 
-            <span className="text-gradient-blue font-semibold"> musical artistry</span>. 
-            Founded by visionary creator liskasYR, we're developing next-generation AI models 
-            and producing innovative music that challenges conventions and inspires millions.
+            LiskCell היא חברת פיתוח משחקים פופולרית שמחברת בין
+            <span className="text-gradient-blue font-semibold"> בינה מלאכותית </span> 
+            לבין 
+            <span className="text-gradient-blue font-semibold"> יצירתיות אמנותית</span>. 
+            נוסדה על ידי היוצר החזונאי liskasYR, אנחנו מפתחים משחקים עם מודלי AI מהדור הבא 
+            ומייצרים תוכן חדשני שמאתגר את הקונבנציות ומעורר השראה למיליונים.
           </p>
         </div>
 
