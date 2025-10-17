@@ -1,0 +1,164 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Pure Black Theme - LiskCell */
+    --background: 0 0% 0%;
+    --foreground: 0 0% 95%;
+
+    --card: 0 0% 5%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 0 0% 3%;
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 0 0% 20%;
+    --primary-foreground: 0 0% 95%;
+
+    --secondary: 0 0% 75%;
+    --secondary-foreground: 0 0% 5%;
+
+    --muted: 0 0% 12%;
+    --muted-foreground: 0 0% 60%;
+
+    --accent: 0 0% 20%;
+    --accent-foreground: 0 0% 95%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 15%;
+    --input: 0 0% 15%;
+    --ring: 0 0% 30%;
+
+    --radius: 0.75rem;
+
+    /* Dark Grey Effects */
+    --dark-grey: 0 0% 20%;
+    --dark-grey-light: 0 0% 30%;
+    --silver: 0 0% 75%;
+    --silver-light: 0 0% 85%;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(0 0% 15%) 0%, hsl(0 0% 25%) 100%);
+    --gradient-silver: linear-gradient(135deg, hsl(0 0% 40%) 0%, hsl(0 0% 70%) 50%, hsl(0 0% 40%) 100%);
+    --gradient-dark: linear-gradient(180deg, hsl(0 0% 3%) 0%, hsl(0 0% 0%) 100%);
+
+    /* Shadows & Glows */
+    --shadow-glow: 0 0 30px hsl(0 0% 20% / 0.5);
+    --shadow-glow-strong: 0 0 50px hsl(0 0% 30% / 0.7);
+    --shadow-card: 0 8px 32px hsl(0 0% 0% / 0.8);
+
+    /* Glass Effect */
+    --glass-bg: hsl(0 0% 5% / 0.4);
+    --glass-border: hsl(0 0% 100% / 0.1);
+
+    /* Animations */
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-glow: all 0.3s ease-in-out;
+
+    --sidebar-background: 220 20% 8%;
+    --sidebar-foreground: 0 0% 90%;
+    --sidebar-primary: 190 100% 50%;
+    --sidebar-primary-foreground: 220 20% 6%;
+    --sidebar-accent: 220 15% 15%;
+    --sidebar-accent-foreground: 0 0% 90%;
+    --sidebar-border: 220 15% 18%;
+    --sidebar-ring: 190 100% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Exo 2', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Orbitron', sans-serif;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-clip-text text-transparent;
+    background-image: var(--gradient-silver);
+  }
+
+  .text-gradient-blue {
+    @apply bg-clip-text text-transparent;
+    background-image: var(--gradient-primary);
+  }
+
+  .glow-border {
+    border: 1px solid hsl(var(--dark-grey) / 0.5);
+    box-shadow: 0 0 20px hsl(var(--dark-grey) / 0.3), inset 0 0 20px hsl(var(--dark-grey) / 0.05);
+  }
+
+  .glow-border-hover {
+    transition: var(--transition-glow);
+  }
+
+  .glow-border-hover:hover {
+    border-color: hsl(var(--dark-grey-light) / 0.8);
+    box-shadow: var(--shadow-glow);
+  }
+
+  .glass-card {
+    background: var(--glass-bg);
+    backdrop-filter: blur(20px);
+    border: 1px solid var(--glass-border);
+    box-shadow: var(--shadow-card);
+  }
+
+  .animate-glow {
+    animation: glow 3s ease-in-out infinite;
+  }
+
+  @keyframes glow {
+    0%, 100% {
+      box-shadow: 0 0 20px hsl(var(--dark-grey) / 0.3);
+    }
+    50% {
+      box-shadow: var(--shadow-glow-strong);
+    }
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+
+  .animate-pulse-glow {
+    animation: pulse-glow 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+
+  @keyframes pulse-glow {
+    0%, 100% {
+      opacity: 1;
+      filter: drop-shadow(0 0 10px hsl(var(--dark-grey-light)));
+    }
+    50% {
+      opacity: 0.7;
+      filter: drop-shadow(0 0 25px hsl(var(--dark-grey-light)));
+    }
+  }
+}
