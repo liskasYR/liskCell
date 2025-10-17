@@ -1,0 +1,93 @@
+import { Music2, Clock, TrendingUp } from 'lucide-react';
+import { Button } from '@/components/ui/button';
+
+export const ReleasesSection = () => {
+  const releases = [
+    {
+      title: 'לא נמאס',
+      artist: 'liskasYR',
+      status: 'Latest Release',
+      date: '2025',
+      type: 'Single',
+      icon: TrendingUp,
+    },
+    {
+      title: 'Upcoming Album',
+      artist: 'liskasYR',
+      status: 'Coming Soon',
+      date: 'TBA',
+      type: 'Full Album',
+      icon: Clock,
+    },
+  ];
+
+  return (
+    <section id="releases" className="py-24 px-4 relative z-10">
+      <div className="max-w-7xl mx-auto">
+        {/* Section header */}
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-6xl font-orbitron font-bold text-gradient-blue mb-4">
+            Music Releases
+          </h2>
+          <div className="w-24 h-1 bg-gradient-primary mx-auto rounded-full mb-6"></div>
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto font-exo">
+            Experience the future of AI-powered music production
+          </p>
+        </div>
+
+        {/* Releases grid */}
+        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+          {releases.map((release, index) => {
+            const Icon = release.icon;
+            return (
+              <div
+                key={index}
+                className="glass-card glow-border-hover rounded-3xl p-8 group transition-all duration-300"
+              >
+                {/* Status badge */}
+                <div className="flex items-center gap-2 mb-6">
+                  <Icon className="w-5 h-5 text-primary animate-pulse-glow" />
+                  <span className="text-sm font-orbitron text-primary uppercase tracking-wider">
+                    {release.status}
+                  </span>
+                </div>
+
+                {/* Album art placeholder */}
+                <div className="mb-6 aspect-square rounded-2xl bg-gradient-to-br from-primary/20 to-purple-500/20 border border-primary/30 flex items-center justify-center group-hover:border-primary/60 transition-all duration-300">
+                  <Music2 className="w-24 h-24 text-primary/40 group-hover:text-primary/60 transition-colors duration-300" />
+                </div>
+
+                {/* Release info */}
+                <div className="space-y-3">
+                  <h3 className="text-3xl font-orbitron font-bold text-silver-light">
+                    {release.title}
+                  </h3>
+                  <p className="text-lg text-muted-foreground font-exo">
+                    by {release.artist}
+                  </p>
+                  <div className="flex items-center gap-4 text-sm text-muted-foreground font-exo">
+                    <span>{release.type}</span>
+                    <span>•</span>
+                    <span>{release.date}</span>
+                  </div>
+                </div>
+
+                {/* Action button */}
+                {release.status === 'Latest Release' && (
+                  <div className="mt-6">
+                    <Button
+                      variant="outline"
+                      className="w-full glow-border-hover bg-transparent backdrop-blur-sm text-primary hover:bg-primary hover:text-primary-foreground font-orbitron transition-all duration-300"
+                    >
+                      Listen Now
+                    </Button>
+                  </div>
+                )}
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    </section>
+  );
+};

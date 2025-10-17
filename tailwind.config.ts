@@ -57,6 +57,28 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        neon: {
+          blue: "hsl(var(--neon-blue))",
+          glow: "hsl(var(--neon-glow))",
+        },
+        silver: {
+          DEFAULT: "hsl(var(--silver))",
+          light: "hsl(var(--silver-light))",
+        },
+      },
+      fontFamily: {
+        orbitron: ['Orbitron', 'sans-serif'],
+        exo: ['Exo 2', 'sans-serif'],
+      },
+      backgroundImage: {
+        'gradient-primary': 'var(--gradient-primary)',
+        'gradient-silver': 'var(--gradient-silver)',
+        'gradient-dark': 'var(--gradient-dark)',
+      },
+      boxShadow: {
+        glow: 'var(--shadow-glow)',
+        'glow-strong': 'var(--shadow-glow-strong)',
+        card: 'var(--shadow-card)',
       },
       borderRadius: {
         lg: "var(--radius)",
