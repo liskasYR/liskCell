@@ -34,12 +34,12 @@ export const ContactSection = () => {
       <div className="max-w-5xl mx-auto">
         {/* Section header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-6xl font-orbitron font-bold text-gradient-blue mb-4">
+          <h2 className="text-4xl md:text-6xl font-orbitron font-bold text-silver-light mb-4">
             Get In Touch
           </h2>
-          <div className="w-24 h-1 bg-gradient-primary mx-auto rounded-full mb-6"></div>
+          <div className="w-24 h-1 bg-gradient-silver mx-auto rounded-full mb-6"></div>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto font-exo">
-            Connect with us and stay updated on our latest innovations
+            Connect with us and join our gaming community
           </p>
         </div>
 
@@ -47,15 +47,15 @@ export const ContactSection = () => {
         <div className="glass-card glow-border rounded-3xl p-12 text-center">
           {/* Email section */}
           <div className="mb-12">
-            <div className="inline-flex items-center justify-center w-20 h-20 rounded-2xl bg-gradient-primary mb-6 animate-pulse-glow">
-              <Mail className="w-10 h-10 text-primary-foreground" />
+            <div className="inline-flex items-center justify-center w-20 h-20 rounded-2xl bg-muted mb-6 animate-pulse-glow">
+              <Mail className="w-10 h-10 text-foreground" />
             </div>
             <h3 className="text-2xl font-orbitron font-bold mb-4 text-silver-light">
               Contact Us
             </h3>
             <a
               href="mailto:contact@liskcell.com"
-              className="text-lg text-primary hover:text-primary/80 font-exo transition-colors duration-300"
+              className="text-lg text-silver hover:text-silver-light font-exo transition-colors duration-300"
             >
               contact@liskcell.com
             </a>

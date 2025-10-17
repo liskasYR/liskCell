@@ -26,12 +26,12 @@ export const ReleasesSection = () => {
       <div className="max-w-7xl mx-auto">
         {/* Section header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-6xl font-orbitron font-bold text-gradient-blue mb-4">
-            Music Releases
+          <h2 className="text-4xl md:text-6xl font-orbitron font-bold text-silver-light mb-4">
+            Game Releases
           </h2>
-          <div className="w-24 h-1 bg-gradient-primary mx-auto rounded-full mb-6"></div>
+          <div className="w-24 h-1 bg-gradient-silver mx-auto rounded-full mb-6"></div>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto font-exo">
-            Experience the future of AI-powered music production
+            Upcoming and featured game titles
           </p>
         </div>
 
@@ -46,15 +46,15 @@ export const ReleasesSection = () => {
               >
                 {/* Status badge */}
                 <div className="flex items-center gap-2 mb-6">
-                  <Icon className="w-5 h-5 text-primary animate-pulse-glow" />
-                  <span className="text-sm font-orbitron text-primary uppercase tracking-wider">
+                  <Icon className="w-5 h-5 text-silver animate-pulse-glow" />
+                  <span className="text-sm font-orbitron text-silver uppercase tracking-wider">
                     {release.status}
                   </span>
                 </div>
 
                 {/* Album art placeholder */}
-                <div className="mb-6 aspect-square rounded-2xl bg-gradient-to-br from-primary/20 to-purple-500/20 border border-primary/30 flex items-center justify-center group-hover:border-primary/60 transition-all duration-300">
-                  <Music2 className="w-24 h-24 text-primary/40 group-hover:text-primary/60 transition-colors duration-300" />
+                <div className="mb-6 aspect-square rounded-2xl bg-gradient-to-br from-muted/20 to-muted/40 border border-border flex items-center justify-center group-hover:border-muted transition-all duration-300">
+                  <Music2 className="w-24 h-24 text-muted-foreground/40 group-hover:text-muted-foreground/60 transition-colors duration-300" />
                 </div>
 
                 {/* Release info */}
@@ -77,9 +77,9 @@ export const ReleasesSection = () => {
                   <div className="mt-6">
                     <Button
                       variant="outline"
-                      className="w-full glow-border-hover bg-transparent backdrop-blur-sm text-primary hover:bg-primary hover:text-primary-foreground font-orbitron transition-all duration-300"
+                      className="w-full glow-border-hover bg-transparent backdrop-blur-sm text-foreground hover:bg-muted hover:text-foreground font-orbitron transition-all duration-300"
                     >
-                      Listen Now
+                      Play Now
                     </Button>
                   </div>
                 )}

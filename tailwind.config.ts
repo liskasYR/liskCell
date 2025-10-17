@@ -57,9 +57,9 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
-        neon: {
-          blue: "hsl(var(--neon-blue))",
-          glow: "hsl(var(--neon-glow))",
+        dark: {
+          grey: "hsl(var(--dark-grey))",
+          light: "hsl(var(--dark-grey-light))",
         },
         silver: {
           DEFAULT: "hsl(var(--silver))",

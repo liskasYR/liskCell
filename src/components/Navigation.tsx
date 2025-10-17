@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import likLogo from '@/assets/lik-logo.png';
+import liskCellLogo from '@/assets/liskcell-logo.png';
 
 export const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -24,13 +24,10 @@ export const Navigation = () => {
             className="flex items-center gap-3 group"
           >
             <img
-              src={likLogo}
-              alt="LIK Logo"
-              className="w-10 h-10 object-contain group-hover:animate-pulse-glow transition-all duration-300"
+              src={liskCellLogo}
+              alt="LiskCell Logo"
+              className="h-10 object-contain group-hover:animate-pulse-glow transition-all duration-300"
             />
-            <span className="text-2xl font-orbitron font-bold text-gradient">
-              liskCell
-            </span>
           </button>
 
           {/* Desktop Navigation - Right side */}

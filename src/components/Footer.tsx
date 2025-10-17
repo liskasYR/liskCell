@@ -1,4 +1,4 @@
-import likLogo from '@/assets/lik-logo.png';
+import liskCellLogo from '@/assets/liskcell-logo.png';
 
 export const Footer = () => {
   return (
@@ -8,13 +8,10 @@ export const Footer = () => {
           {/* Logo */}
           <div className="mb-6 flex flex-col items-center gap-3">
             <img
-              src={likLogo}
-              alt="LIK Logo"
-              className="w-16 h-16 object-contain"
+              src={liskCellLogo}
+              alt="LiskCell Logo"
+              className="h-16 object-contain"
             />
-            <p className="text-lg text-silver-light font-orbitron">
-              LiskCell
-            </p>
           </div>
 
           {/* Copyright */}
@@ -24,7 +21,7 @@ export const Footer = () => {
 
           {/* Tagline */}
           <p className="text-sm text-muted-foreground/50 font-exo italic max-w-md mx-auto pt-4">
-            חברת פיתוח משחקים פופולרית
+            Thank you for being part of our journey – together we'll continue to create and play! ❤️
           </p>
         </div>
       </div>

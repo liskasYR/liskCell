@@ -7,21 +7,21 @@ export const ProjectsSection = () => {
       title: 'LiskGPT',
       subtitle: 'Advanced Language Model',
       description: 'Our flagship AI model pushing the boundaries of natural language understanding and generation with state-of-the-art capabilities.',
-      gradient: 'from-cyan-500 to-blue-500',
+      gradient: 'from-gray-600 to-gray-500',
     },
     {
       icon: Zap,
       title: 'LPT Models',
       subtitle: 'Next-Gen AI Framework',
       description: 'Revolutionary machine learning architecture designed for creative applications, enabling unprecedented artistic expression through AI.',
-      gradient: 'from-blue-500 to-purple-500',
+      gradient: 'from-gray-500 to-gray-400',
     },
     {
       icon: Mic,
-      title: 'Music Production',
-      subtitle: 'For liskasYR',
-      description: 'Cutting-edge music production combining AI-assisted composition, innovative sound design, and artistic vision for groundbreaking releases.',
-      gradient: 'from-purple-500 to-pink-500',
+      title: 'Game Projects',
+      subtitle: 'Exciting Titles',
+      description: 'Innovative game development combining cutting-edge technology, engaging gameplay, and artistic vision for unforgettable gaming experiences.',
+      gradient: 'from-gray-400 to-gray-300',
     },
   ];
 
@@ -30,12 +30,12 @@ export const ProjectsSection = () => {
       <div className="max-w-7xl mx-auto">
         {/* Section header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-6xl font-orbitron font-bold text-gradient-blue mb-4">
+          <h2 className="text-4xl md:text-6xl font-orbitron font-bold text-silver-light mb-4">
             Our Projects
           </h2>
-          <div className="w-24 h-1 bg-gradient-primary mx-auto rounded-full mb-6"></div>
+          <div className="w-24 h-1 bg-gradient-silver mx-auto rounded-full mb-6"></div>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto font-exo">
-            Innovation at the frontier of AI and music technology
+            Games that inspire and unite players worldwide
           </p>
         </div>
 
@@ -58,11 +58,11 @@ export const ProjectsSection = () => {
 
                   {/* Content */}
                   <div className="flex-1">
-                    <div className="mb-2">
-                      <span className="text-sm font-exo text-primary uppercase tracking-wider">
-                        {project.subtitle}
-                      </span>
-                    </div>
+                  <div className="mb-2">
+                    <span className="text-sm font-exo text-silver uppercase tracking-wider">
+                      {project.subtitle}
+                    </span>
+                  </div>
                     <h3 className="text-3xl md:text-4xl font-orbitron font-bold mb-4 text-silver-light">
                       {project.title}
                     </h3>
