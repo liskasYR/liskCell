@@ -46,9 +46,12 @@ export const AboutSection = () => {
             Why Choose liskCell?
           </h3>
           <div className="space-y-4 text-lg text-foreground font-exo mb-8">
-            <p>🎨 <strong>Innovation Without Limits:</strong> Every game is a story, every character is a world, and every level is a challenge you'll always remember.</p>
-            <p>🌍 <strong>International Community:</strong> Our games connect people from all over the world, creating new communities and friendships.</p>
-            <p>🚀 <strong>Pursuit of Excellence:</strong> We invest in new technologies and quality content to bring you the very best.</p>
+            <p>🎨 <strong>Innovation Without Limits:</strong> 
+              Every game is a story, every character is a world, and every level is a challenge you'll always remember.</p>
+            <p>🌍 <strong>International Community:</strong> 
+              Our games connect people from all over the world, creating new communities and friendships.</p>
+            <p>🚀 <strong>Pursuit of Excellence:</strong> 
+              We invest in new technologies and quality content to bring you the very best.</p>
           </div>
 
           <p className="text-lg text-muted-foreground italic font-exo text-center">
