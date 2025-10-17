@@ -5,17 +5,20 @@ export const AboutSection = () => {
     {
       icon: Cpu,
       title: 'Game Development',
-      description: 'Creating immersive gaming experiences with cutting-edge technology and innovative gameplay',
+      description:
+        'Creating immersive gaming experiences with cutting-edge technology and innovative gameplay',
     },
     {
       icon: Music,
       title: 'Rich Worlds',
-      description: 'Building vibrant game worlds filled with life, inspired by everything that excites and challenges us',
+      description:
+        'Building vibrant game worlds filled with life, inspired by everything that excites and challenges us',
     },
     {
       icon: Sparkles,
       title: 'Player-First',
-      description: 'Every game tells a story and creates lasting memories for our global community',
+      description:
+        'Every game tells a story and creates lasting memories for our global community',
     },
   ];
 
@@ -41,17 +44,23 @@ export const AboutSection = () => {
           <p className="text-lg md:text-xl text-foreground leading-relaxed font-exo mb-8">
             We don't just develop games – we create experiences. Every game we produce is born from a love of gaming, boundless creativity, and a desire to touch the hearts of our players 🎮💡
           </p>
-          
+
           <h3 className="text-2xl font-orbitron font-bold mb-6 text-silver-light">
             Why Choose liskCell?
           </h3>
-          <div className="space-y-4 text-lg text-foreground font-exo mb-8">
-            <p>🎨 <strong>Innovation Without Limits:</strong> 
-              Every game is a story, every character is a world, and every level is a challenge you'll always remember.</p>
-            <p>🌍 <strong>International Community:</strong> 
-              Our games connect people from all over the world, creating new communities and friendships.</p>
-            <p>🚀 <strong>Pursuit of Excellence:</strong> 
-              We invest in new technologies and quality content to bring you the very best.</p>
+          <div className="space-y-6 text-lg text-foreground font-exo mb-8">
+            <div>
+              🎨 <strong>Innovation Without Limits:</strong><br />
+              Every game is a story, every character is a world, and every level is a challenge you'll always remember.
+            </div>
+            <div>
+              🌍 <strong>International Community:</strong><br />
+              Our games connect people from all over the world, creating new communities and friendships.
+            </div>
+            <div>
+              🚀 <strong>Pursuit of Excellence:</strong><br />
+              We invest in new technologies and quality content to bring you the very best.
+            </div>
           </div>
 
           <p className="text-lg text-muted-foreground italic font-exo text-center">
