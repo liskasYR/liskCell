@@ -37,7 +37,7 @@ export const AboutSection = () => {
         </div>
 
         {/* Mission statement */}
-        <div className="glass-card glow-border rounded-3xl p-8 md:p-12 mb-16 max-w-4xl mx-auto">
+        <div className="glass-card glow-border rounded-3xl p-8 md:p-12 mb-16 max-w-4xl mx-auto text-center">
           <h3 className="text-2xl font-orbitron font-bold mb-6 text-silver-light">
             What We Do at liskCell
           </h3>
@@ -63,7 +63,7 @@ export const AboutSection = () => {
             </div>
           </div>
 
-          <p className="text-lg text-muted-foreground italic font-exo text-center">
+          <p className="text-lg text-muted-foreground italic font-exo">
             "Games are not just fun – they are a bridge connecting people and experiences."
           </p>
         </div>
