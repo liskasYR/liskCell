@@ -14,27 +14,20 @@ type Release = {
 
 export const ReleasesSection = () => {
   const navigate = useNavigate();
-  const [countdown, setCountdown] = useState("...");
+  const [countdown, setCountdown] = useState(() => {
+    return localStorage.getItem("liskCountdown") || "...";
+  });
 
   useEffect(() => {
-    const getNextFriday = () => {
-      const now = new Date();
-      const day = now.getDay();
-      const daysUntilFriday = (5 - day + 7) % 7 || 7;
-      const nextFriday = new Date(now);
-      nextFriday.setDate(now.getDate() + daysUntilFriday);
-      nextFriday.setHours(0, 0, 0, 0);
-      return nextFriday;
-    };
-
-    const target = getNextFriday().getTime();
+    const targetDate = new Date("2025-10-31T00:00:00").getTime();
 
     const updateCountdown = () => {
       const now = new Date().getTime();
-      const distance = target - now;
+      const distance = targetDate - now;
 
       if (distance <= 0) {
         setCountdown("00:00:00");
+        localStorage.setItem("liskCountdown", "00:00:00");
         return;
       }
 
@@ -42,9 +35,9 @@ export const ReleasesSection = () => {
       const minutes = Math.floor((distance / (1000 * 60)) % 60);
       const seconds = Math.floor((distance / 1000) % 60);
 
-      setCountdown(
-        `${String(hours).padStart(2, "0")}:${String(minutes).padStart(2, "0")}:${String(seconds).padStart(2, "0")}`
-      );
+      const formatted = `${String(hours).padStart(2, "0")}:${String(minutes).padStart(2, "0")}:${String(seconds).padStart(2, "0")}`;
+      setCountdown(formatted);
+      localStorage.setItem("liskCountdown", formatted);
     };
 
     updateCountdown();
@@ -56,7 +49,7 @@ export const ReleasesSection = () => {
     {
       title: "liskCell's Staff Form",
       artist: "liskCell",
-      status: "Are back to",
+      status: "New!",
       date: countdown,
       type: "Project",
       icon: Clock,
