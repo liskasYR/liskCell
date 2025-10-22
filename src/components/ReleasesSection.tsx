@@ -54,7 +54,7 @@ export const ReleasesSection = () => {
 
   const releases: Release[] = [
     {
-      title: "FORM ARE BACK",
+      title: "RELEASE",
       artist: "liskasYR",
       status: "Coming Soon",
       date: countdown,
@@ -67,22 +67,16 @@ export const ReleasesSection = () => {
     <section id="releases" className="py-24 px-4 relative z-10">
       <div className="max-w-7xl mx-auto text-center mb-16">
         <h2 className="text-4xl md:text-6xl font-orbitron font-bold text-silver-light mb-4">
-          Form Are Back
+          Game Releases
         </h2>
         <div className="w-24 h-1 bg-gradient-silver mx-auto rounded-full mb-6"></div>
         <p className="text-xl text-muted-foreground max-w-3xl mx-auto font-exo mb-4">
           Countdown to next release
         </p>
-        <div className="flex items-center justify-center gap-2 text-muted-foreground font-orbitron text-xl mb-8">
+        <div className="flex items-center justify-center gap-2 text-muted-foreground font-orbitron text-xl">
           <Clock className="w-6 h-6" />
           <span>{countdown}</span>
         </div>
-        <Button
-          onClick={() => navigate("/forms")}
-          className="px-6 py-3 rounded-xl bg-gradient-to-r from-green-500 to-teal-500 text-white font-bold hover:opacity-90 transition-all duration-300"
-        >
-          Go to Forms
-        </Button>
       </div>
 
       <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
@@ -91,9 +85,9 @@ export const ReleasesSection = () => {
           return (
             <div
               key={index}
-              className="glass-card glow-border-hover rounded-3xl p-8 group transition-all duration-300"
+              className="glass-card glow-border-hover rounded-3xl p-8 group transition-all duration-300 text-center"
             >
-              <div className="flex items-center gap-2 mb-6">
+              <div className="flex items-center justify-center gap-2 mb-6">
                 <Icon className="w-5 h-5 text-silver animate-pulse-glow" />
                 <span className="text-sm font-orbitron text-silver uppercase tracking-wider">
                   {release.status}
@@ -111,11 +105,20 @@ export const ReleasesSection = () => {
                 <p className="text-lg text-muted-foreground font-exo">
                   by {release.artist}
                 </p>
-                <div className="flex items-center gap-4 text-sm text-muted-foreground font-exo">
+                <div className="flex items-center justify-center gap-4 text-sm text-muted-foreground font-exo">
                   <span>{release.type}</span>
                   <span>•</span>
                   <span>{release.date}</span>
                 </div>
+              </div>
+
+              <div className="mt-6">
+                <Button
+                  onClick={() => navigate("/forms")}
+                  className="px-6 py-3 rounded-xl bg-gradient-to-r from-green-500 to-teal-500 text-white font-bold hover:opacity-90 transition-all duration-300"
+                >
+                  Go to Forms
+                </Button>
               </div>
             </div>
           );
