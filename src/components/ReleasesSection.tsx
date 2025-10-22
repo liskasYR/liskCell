@@ -67,11 +67,11 @@ export const ReleasesSection = () => {
     <section id="releases" className="py-24 px-4 relative z-10">
       <div className="max-w-7xl mx-auto text-center mb-16">
         <h2 className="text-4xl md:text-6xl font-orbitron font-bold text-silver-light mb-4">
-          Game Releases
+          Project Releases
         </h2>
         <div className="w-24 h-1 bg-gradient-silver mx-auto rounded-full mb-6"></div>
         <p className="text-xl text-muted-foreground max-w-3xl mx-auto font-exo mb-4">
-          Countdown to next release
+          Upcoming and featured game titles and Projects
         </p>
         <div className="flex items-center justify-center gap-2 text-muted-foreground font-orbitron text-xl">
           <Clock className="w-6 h-6" />
