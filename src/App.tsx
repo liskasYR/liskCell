@@ -1,15 +1,15 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-// Pages
+// עמודים
 import Index from "./pages/Index";
 import AiModelsPage from "./pages/AiModelsPage";
-import FormsPage from "./pages/FormsPage";
-import Wiki from "./pages/Wiki";
-import GamesPage from "./pages/GamesPage";
 import DocsPage from "./pages/DocsPage";
-import MaintenancePage from "./pages/MaintenancePage";
+import FormsPage from "./pages/FormsPage";
+import GamesPage from "./pages/GamesPage";
+import Wiki from "./pages/Wiki";
 import NotFound from "./pages/NotFound";
+import AiLandingPage from "./pages/AiLandingPage"; // עמוד /AI
 
 const App: React.FC = () => {
   return (
@@ -17,11 +17,11 @@ const App: React.FC = () => {
       <Routes>
         <Route path="/" element={<Index />} />
         <Route path="/models" element={<AiModelsPage />} />
-        <Route path="/forms" element={<FormsPage />} />
-        <Route path="/wiki" element={<Wiki />} />
-        <Route path="/games" element={<GamesPage />} />
         <Route path="/docs" element={<DocsPage />} />
-        <Route path="/maintenance" element={<MaintenancePage />} />
+        <Route path="/forms" element={<FormsPage />} />
+        <Route path="/games" element={<GamesPage />} />
+        <Route path="/wiki" element={<Wiki />} />
+        <Route path="/AI" element={<AiLandingPage />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>
