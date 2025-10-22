@@ -16,7 +16,7 @@ export const Footer = () => {
 
           {/* Copyright */}
           <p className="text-muted-foreground font-exo">
-            © 2025 LiskCell. All rights reserved.
+            © 2025 liskCell. All rights reserved.
           </p>
 
           {/* Tagline */}
