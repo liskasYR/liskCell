@@ -25,7 +25,7 @@ export const AboutSection = () => {
         {/* Section header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-6xl font-orbitron font-bold text-silver-light mb-4">
-            About LiskCell
+            About liskCell
           </h2>
           <div className="w-24 h-1 bg-gradient-silver mx-auto rounded-full mb-6"></div>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto font-exo">
@@ -36,14 +36,14 @@ export const AboutSection = () => {
         {/* Mission statement */}
         <div className="glass-card glow-border rounded-3xl p-8 md:p-12 mb-16 max-w-4xl mx-auto">
           <h3 className="text-2xl font-orbitron font-bold mb-6 text-silver-light">
-            What We Do at LiskCell
+            What We Do at liskCell
           </h3>
           <p className="text-lg md:text-xl text-foreground leading-relaxed font-exo mb-8">
             We don't just develop games – we create experiences. Every game we produce is born from a love of gaming, boundless creativity, and a desire to touch the hearts of our players 🎮💡
           </p>
           
           <h3 className="text-2xl font-orbitron font-bold mb-6 text-silver-light">
-            Why Choose LiskCell?
+            Why Choose liskCell?
           </h3>
           <div className="space-y-4 text-lg text-foreground font-exo mb-8">
             <p>🎨 <strong>Innovation Without Limits:</strong> Every game is a story, every character is a world, and every level is a challenge you'll always remember.</p>
