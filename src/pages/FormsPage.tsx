@@ -3,48 +3,27 @@ const FormsPage = () => {
     <main className="py-24 px-4 text-center">
       <div className="max-w-7xl mx-auto">
         <h1 className="text-4xl md:text-6xl font-orbitron font-bold text-silver-light mb-4">
-          Forms
+          Contact Us
         </h1>
         <div className="w-24 h-1 bg-gradient-silver mx-auto rounded-full mb-6"></div>
         <p className="text-xl text-muted-foreground max-w-3xl mx-auto font-exo mb-12">
           Fill out the form below to connect with liskCell
         </p>
 
-        <form className="max-w-2xl mx-auto space-y-6 text-left">
-          <div>
-            <label className="block text-sm font-orbitron text-silver-light mb-2">Name</label>
-            <input
-              type="text"
-              className="w-full px-4 py-3 rounded-xl bg-muted text-foreground border border-border focus:outline-none focus:ring-2 focus:ring-silver"
-              placeholder="Your name"
-            />
-          </div>
-
-          <div>
-            <label className="block text-sm font-orbitron text-silver-light mb-2">Email</label>
-            <input
-              type="email"
-              className="w-full px-4 py-3 rounded-xl bg-muted text-foreground border border-border focus:outline-none focus:ring-2 focus:ring-silver"
-              placeholder="you@example.com"
-            />
-          </div>
-
-          <div>
-            <label className="block text-sm font-orbitron text-silver-light mb-2">Message</label>
-            <textarea
-              rows={5}
-              className="w-full px-4 py-3 rounded-xl bg-muted text-foreground border border-border focus:outline-none focus:ring-2 focus:ring-silver"
-              placeholder="Write your message here..."
-            />
-          </div>
-
-          <button
-            type="submit"
-            className="w-full py-3 rounded-xl bg-gradient-silver text-background font-orbitron font-bold hover:opacity-90 transition-all duration-300"
+        <div className="max-w-4xl mx-auto">
+          <iframe
+            src="https://docs.google.com/forms/d/e/1FAIpQLSdd8agwX0rULf6KpFgFvs_dfOSgTWJO_QzR9WE3qWp31RLc5g/viewform?usp=dialog"
+            width="100%"
+            height="800"
+            frameBorder="0"
+            marginHeight={0}
+            marginWidth={0}
+            title="Google Form"
+            className="rounded-xl border border-border shadow-lg"
           >
-            Send Message
-          </button>
-        </form>
+            טופס נטען...
+          </iframe>
+        </div>
       </div>
     </main>
   );
