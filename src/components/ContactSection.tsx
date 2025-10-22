@@ -1,4 +1,4 @@
-import { Mail, Instagram, Youtube, Twitter, Music } from 'lucide-react';
+import { Mail, Instagram, Youtube, Twitter } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 export const ContactSection = () => {
@@ -6,26 +6,20 @@ export const ContactSection = () => {
     {
       name: 'Instagram',
       icon: Instagram,
-      href: '#',
+      href: 'https://instagram.com/@liskcell',
       color: 'hover:text-pink-500',
     },
     {
       name: 'YouTube',
       icon: Youtube,
-      href: '#',
+      href: 'https://youtube.com/@liskcell',
       color: 'hover:text-red-500',
     },
     {
       name: 'Twitter',
       icon: Twitter,
-      href: '#',
+      href: 'https://x.com/liskcell',
       color: 'hover:text-blue-400',
-    },
-    {
-      name: 'Spotify',
-      icon: Music,
-      href: '#',
-      color: 'hover:text-green-500',
     },
   ];
 
