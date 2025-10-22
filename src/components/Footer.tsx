@@ -9,7 +9,7 @@ export const Footer = () => {
           <div className="mb-6 flex flex-col items-center gap-3">
             <img
               src={liskCellLogo}
-              alt="LiskCell Logo"
+              alt="liskCell Logo"
               className="h-16 object-contain"
             />
           </div>
