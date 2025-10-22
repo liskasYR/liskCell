@@ -3,7 +3,7 @@ const FormsPage = () => {
     <main className="py-24 px-4 text-center">
       <div className="max-w-7xl mx-auto">
         <h1 className="text-4xl md:text-6xl font-orbitron font-bold text-silver-light mb-4">
-          Contact Us
+          Forms Support
         </h1>
         <div className="w-24 h-1 bg-gradient-silver mx-auto rounded-full mb-6"></div>
         <p className="text-xl text-muted-foreground max-w-3xl mx-auto font-exo mb-12">
@@ -30,3 +30,4 @@ const FormsPage = () => {
 };
 
 export default FormsPage;
+
