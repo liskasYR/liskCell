@@ -54,11 +54,11 @@ export const ReleasesSection = () => {
 
   const releases: Release[] = [
     {
-      title: "RELEASE",
-      artist: "liskasYR",
-      status: "Coming Soon",
+      title: "liskCell's Staff Form",
+      artist: "liskCell",
+      status: "Are back to",
       date: countdown,
-      type: "Single",
+      type: "Project",
       icon: Clock,
     },
   ];
