@@ -4,7 +4,7 @@ export const ProjectsSection = () => {
   const projects = [
     {
       icon: Brain,
-      title: 'LiskGPT',
+      title: 'liskChat',
       subtitle: 'Advanced Language Model',
       description: 'Our flagship AI model pushing the boundaries of natural language understanding and generation with state-of-the-art capabilities.',
       gradient: 'from-gray-600 to-gray-500',
